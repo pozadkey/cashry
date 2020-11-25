@@ -1,4 +1,5 @@
-const {Schema} = require('mongoose'),
+const mongoose = require('mongoose'),
+{Schema} = require('mongoose'),
 cashSchema = new Schema({
     item: {
         type: String,

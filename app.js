@@ -1,5 +1,6 @@
 const express = require('express'),
 mongoose = require('mongoose'),
+cashRoute = require('./routes/cashRoute')
 port = 3000,
 localhost = '127.0.0.1'
 app = express();
@@ -23,4 +24,4 @@ mongoose.connect(db, { useUnifiedTopology: true, useNewUrlParser: true})
     })
 
 app.get('/', (req, res)=>{res.render('home')})
-
+app.use(cashRoute)

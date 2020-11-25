@@ -6,3 +6,5 @@ router.post('/add', cashRoute.addItem)
 router.post('/update', cashRoute.updateItem)
 router.get('/edit', cashRoute.editItem)
 router.delete('/delete', cashRoute.deleteItem)
+
+module.exports = router
